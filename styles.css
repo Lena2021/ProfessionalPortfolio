@@ -1,7 +1,7 @@
 :root {
-    --primary-color: #1f1c25;
-    --secondary-color:#25737b;
-    --tertiary-color: #d3bd4e;
+    --primary-color: #00F5D4;
+    --secondary-color: #00BBF9;
+    --tertiary-color: #FEE440;
 }
 
 * {
@@ -12,59 +12,149 @@
 
 body {
     color: var(--tertiary-color);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-/* Header/ Nav Bar Styles Start */
+/* Header */
 
 header {
-   padding: 20px 35px;
-   background-color: var(--tertiary-color);
-   display: flex-end;
-   justify-content: space-between;
-   flex-wrap: wrap;
-   position: sticky;
-   position: -webkit-sticky;
-   top: 0;
-   background-size: cover;
-   background-image: url("paper.gif");
-   background-attachment: fixed;
-   background-position: 80%;
-   z-index: 9999;
+    padding: 25px 75px;
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 80%;
+    z-index: 9999;
 }
-
+/* Marlena Rainey Header */
 header h1 {
     font-weight: bold;
     margin: 0;
-    font-size: 36px;
-    color: var(--primary-color);
-    text-shadow: 0 0 10px rgba(0,0,0,0.5);
-}
-
-header a {
+    font-size: 48px;
+    color: var(--tertiary-color);
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  header a {
+    text-decoration: none;
+    color: var(--tertiary-color);
+  }
+  
+  header nav {
     margin: 7px 0;
-}
-
-header nav ul {
- display: flex;
- flex-wrap: wrap;
- justify-content: space-between;
- align-items: center;
- list-style: none;
- font-size: 24px;
-
-}
-
-header nav ul li a {
+  }
+  
+  header nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+  }
+  
+  header nav ul li a {
     padding: 10px 15px;
     font-weight: lighter;
     font-size: 1.55vw;
-    text-shadow: 0 0 20px rgba(0, 0, 0.5);
-}
-
-header nav ul li a:hover {
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  header nav ul li a:hover {
     background: var(--primary-color);
     color: var(--secondary-color);
     border-radius: 15px;
     text-shadow: none;
+  }
+
+/* Header Navbar Styler End */
+
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+h1 {
+    font:50px;
+    background-color: var(--primary-color);
+}
+
+h2 {
+    color: var(--secondary-color);
+}
+
+h3 {
+    color: var(--tertiary-color);
+}
+address {
+    color: black;
+}
+
+section {
+    padding: 20px, 35px;
+    background-color: var(--secondary-color);
+}
+
+/* Hero Style Start */
+.hero {
+    background-image: url('./assets/paper.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    background-attachment: fixed;
+    background-position: 80%;
+}
+
+.hero-cta {
+    width: 100%;
+    text-align: center;
+    margin: 10%;
+    color: black;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Hero Style Ends*/
+
+/* Body Section Starts */
+
+.aboutmetext {
+    color: white;
+    text-align: left;
+
+}
+
+.aboutmetext img {
+    width: 30%;
+    height: 30%;
+    justify-content: space-around;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+/* Footer Styles Start */
+footer {
+    background-color: var(--primary-color);
+    padding: 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+footer h2 {
+    color: var(--secondary-color);
+    font-size: 18px;
+    margin: 0;
+}
+
+footer div {
+    line-height: 1.5;
+    text-align: center;
 }
